@@ -193,7 +193,7 @@ a{
     margin: 1rem 0;
     outline: 0;
     text-transform:uppercase;
-    padding:2rem 3rem;
+    padding:2rem 4vw;
     border:0;
     border-radius:40px;
     cursor:pointer;
@@ -282,6 +282,7 @@ a{
     border:0;
     flex-grow:1;
     padding:1.5rem 2rem;
+    width:0;
 }
 
 .input-group .btn{
@@ -513,6 +514,9 @@ a{
 
 /* Callouts */
 .callout{
+    margin:0;
+    /* position:relative;
+    top:5rem; */
     padding:4rem;
     border-radius: 5px;
 }
@@ -537,6 +541,11 @@ a{
     text-align: center;
 }
 
+/* .callout__footer{
+    position: relative;
+    top:5rem;
+} */
+
 @media screen and (min-width: 768px){
     .callout .grid--1x2{
         grid-template-columns: 1fr auto;
@@ -549,6 +558,13 @@ a{
         justify-self:start;
         margin:0 2rem;
     }
+    .callout__footer{
+        position: relative;
+        top:5rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
 }
 
 /* Collapsible */
@@ -725,8 +741,9 @@ a{
 }
 
 .block-domain__prices{
+    color:var(--color-headings);
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     font-size: 2rem;
     font-weight:600;
@@ -830,8 +847,8 @@ a{
 }
 
 .footer__brand img{
-    width:100%
-    max-width:230px;
+    width:100%;
+    max-width: 230px;
 }
 
 .footer__copyright{
@@ -870,4 +887,5 @@ a{
     .footer__heading{
         font-size:1.6rem;
     }
+   
 }
